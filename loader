@@ -15,6 +15,7 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Tab Main", Icon = "skull" }),
+    TabNew = Window:AddTab({ Title = "Tab Grow A Garden Script", Icon = "skull" }),
     Tab4 = Window:AddTab({ Title = "Tab Local Player", Icon = "skull" }),
     TabOther = Window:AddTab({ Title = "Tab Tool", Icon = "skull" }),
     Settings = Window:AddTab({ Title = "Tab Settings", Icon = "skull" })
@@ -244,6 +245,55 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord
         Callback = function()
           loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
         end
+    })
+        Tabs.TabNew:AddButton({
+        Title = "Best Script",
+        Description = "",
+        Callback = function()
+           --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ameicaa1/Grow-a-Garden/main/Grow_A_Garden.lua"))()
+        end
+    })
+    Tabs.TabNew:AddParagraph({
+        Title = "Teleport",
+        Content = "Teleport Section"
+    })
+    Tabs.TabNew:AddButton({
+        Title = "Teleport Pet Shop",
+        Description = "",
+        Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-260.41452, 2.76619363, -9.37789536, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end
+    })
+    Tabs.TabNew:AddButton({
+        Title = "Teleport Gear Shop",
+        Description = "",
+        Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-260.41452, 2.76619363, -31.3778954, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end
+    })
+    Tabs.TabNew:AddButton({
+        Title = "Teleport Seed Shop",
+        Description = "",
+        Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61.5854721, 2.76619363, -27.0039806, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end
+    })
+    Tabs.TabNew:AddButton({
+        Title = "Teleport Sell Shop",
+        Description = "",
+        Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61.5854721, 2.76619363, 0.426784277, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end
+    })
+    Tabs.TabNew:AddButton({
+        Title = "Teleport Wise Old Owl",
+        Description = "",
+        Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-99.5022507, 1.10001338, -11.7994785, -1.1920929e-07, 0, -1.00000012, 0, 1, 0, 1.00000012, 0, -1.1920929e-07)
+    end
     })
 end
    
